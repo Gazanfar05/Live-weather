@@ -1,0 +1,201 @@
+.weather-box {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid #a94bff55;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px #a94bff88;
+  }
+  
+  .weather-box input {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .weather-box button {
+    background-color: #a94bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .weather-box button:hover {
+    background-color: #9333ea;
+  }
+  
+  #weatherResult {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #8be9fd;
+  }
+  .weather-container input {
+    padding: 10px;
+    border: 1px solid #a94bff;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  .weather-container input::placeholder {
+    color: #aaa;
+  }
+  
+  .weather-container .btn {
+    margin-top: 10px;
+  }
+
+  body {
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    transition: background 0.5s ease-in-out;
+}
+
+input, button {
+    background: #222;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+button {
+    background: #ff9800; /* Orange for contrast */
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e68900;
+}
+
+#weather-info {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Error Message */
+#error-message {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Loading Animation */
+#loading {
+    display: none;
+    font-size: 18px;
+    margin-top: 10px;
+}
+#weather-info {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  #weather-info.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  #error-message {
+    color: #ff4d4d;
+    margin-top: 1rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  #error-message.show {
+    opacity: 1;
+  }
+  
+  #loading {
+    display: none;
+    font-style: italic;
+    color: #fff;
+    animation: pulse 1.2s infinite;
+    margin-top: 1rem;
+  }
+  
+  @keyframes pulse {
+    0% { opacity: 0.4; }
+    50% { opacity: 1; }
+    100% { opacity: 0.4; }
+  }
+  
+  img {
+    animation: pop 0.6s ease;
+  }
+  
+  @keyframes pop {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  button:active {
+    transform: scale(0.96);
+    transition: transform 0.1s ease;
+  }
+  body {
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.6s ease-in-out;
+  }
+  
+  .clear {
+    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb'); /* sunny */
+  }
+  
+  .clouds {
+    background-image: url('https://images.unsplash.com/photo-1523413651479-597eb2da0ad6'); /* cloudy */
+  }
+  
+  .rain {
+    background-image: url('https://images.unsplash.com/photo-1502082553048-f009c37129b9'); /* rain */
+  }
+  
+  .snow {
+    background-image: url('https://images.unsplash.com/photo-1608889175112-354989ee9862'); /* snow */
+  }
+  
+  .thunderstorm {
+    background-image: url('https://images.unsplash.com/photo-1602751581700-46c81d2c3be7'); /* storm */
+  }
+  
+  .drizzle {
+    background-image: url('https://images.unsplash.com/photo-1543007631-76bc3997d3f2'); /* light rain */
+  }
+  
+  .mist {
+    background-image: url('https://images.unsplash.com/photo-1603978830737-01c7cfb4d2c0'); /* mist/fog */
+  }
+  body {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
